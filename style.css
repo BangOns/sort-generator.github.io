@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+.container {
+  max-width: 800px;
+  margin: 5px auto;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.kotak {
+  width: 100%;
+  height: 700px;
+  background-color: #f7c25a;
+  margin: 5px auto;
+  position: relative;
+  border-radius: 5px;
+  border: 5px solid rgb(66, 66, 66);
+}
+
+.kotak1,
+.kotak2,
+.kotak3 {
+  width: 100%;
+  height: 33.5%;
+  border-bottom: 1px solid black;
+}
+/* kotak 1 */
+.kotak1,
+.kotak3 {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+.kotak1 .teksKotak {
+  width: 100%;
+  height: 20%;
+  text-transform: uppercase;
+}
+.kotak1 .hasilinput {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  overflow: auto;
+}
+.hasilinput .angka,
+.hasil .angka {
+  font-size: 50px;
+}
+/* kotak 2 */
+.kotak2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2%;
+}
+.kotak2 .teksKotak {
+  text-align: center;
+  text-transform: uppercase;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  align-items: center;
+}
+.input input {
+  outline: none;
+  width: 60%;
+  padding: 1%;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 10px;
+  border: none;
+}
+.input button {
+  width: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.generate {
+  width: 100%;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.generate button {
+  width: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+/* kotak 3 */
+.kotak3 .teksHasil {
+  text-align: center;
+}
+.kotak3 .hasil {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin: 3px auto;
+  overflow: auto;
+}
+@media screen and (max-width: 662px) {
+  .kotak2 button {
+    width: 70px;
+  }
+  .teksHasil,
+  .container h1 {
+    font-size: 0.7em;
+  }
+  .container h1 {
+    font-size: 0.9em;
+  }
+  .hasilinput .angka,
+  .hasil .angka {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .kotak1 .teksKotak {
+    width: 100%;
+    height: 20%;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  .hasilinput .angka,
+  .hasil .angka {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .teksHasil {
+    font-size: 0.5em;
+  }
+}
