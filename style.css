@@ -66,6 +66,10 @@ body {
 .hasilinput .angka,
 .hasil .angka {
   font-size: 50px;
+  animation-name: muncul;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transition: all 0.3s ease-in;
 }
 /* kotak 2 */
 .kotak2 {
@@ -128,6 +132,15 @@ body {
   margin: 3px auto;
   overflow: auto;
 }
+@keyframes muncul {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 662px) {
   .kotak2 button {
     width: 70px;
